@@ -1,124 +1,82 @@
-Calculadora en Python
-Una calculadora en Python es un programa que permite realizar operaciones matemáticas de forma sencilla y rápida. Su función principal es recibir datos numéricos del usuario, aplicar una operación aritmética (como suma, resta, multiplicación o división) y mostrar el resultado en pantalla.
-Este tipo de proyecto puede desarrollarse de distintas maneras:
+# Calculadora Básica en Python 
 
+Esta es una calculadora de escritorio simple desarrollada con Python, que te permite realizar operaciones aritméticas básicas como suma, resta, multiplicación, división, porcentaje y raíz cuadrada.
 
-Por consola, donde el usuario escribe los números y el tipo de operación.
+---
 
+###  Tecnologías
 
-Con interfaz gráfica (GUI), usando bibliotecas como Tkinter, donde se muestran botones y una pantalla similar a una calculadora física.
+* **Python**
+* Librería **tkinter** para la interfaz gráfica.
+* Librería **math** para funciones matemáticas.
 
+---
 
-El objetivo principal de la calculadora es automatizar los cálculos matemáticos y reforzar conceptos de programación, como:
+###  Características Principales
 
+* **Librerías:** El proyecto importa `tkinter` (con el alias `tk`) para crear la interfaz gráfica y la librería `math` para utilizar la función de raíz cuadrada (`math.sqrt`).
+* **Variable Global:** La variable `expresion_actual` almacena la cadena de caracteres de la operación que el usuario está construyendo, por ejemplo: `"10+5"`.
+* **Manejo de Lógica:** La función `clic_boton(simbolo)` es el núcleo de la aplicación. Se ejecuta cada vez que se presiona un botón.
+* **Función `eval()`:** Esta función integrada de Python evalúa una cadena de texto como si fuera una expresión matemática, lo que simplifica enormemente la lógica de cálculo. Por ejemplo, `eval("10+5")` retorna `15`.
+* **Manejo de Errores:** Se implementa un bloque `try...except` para capturar y gestionar errores, como la división por cero, lo que previene que la aplicación se cierre inesperadamente y muestra un mensaje de "Error" en pantalla.
 
-Entrada y salida de datos
+---
 
+###  Instalación
 
-Uso de operadores aritméticos
+#### Opción A: Ejecutable
 
+1.  Dirígete a la carpeta `dist`.
+2.  Ejecuta el archivo `Calculadora.exe`.
 
-Estructuras de control (condicionales y bucles)
+#### Opción B: Código Fuente
 
+1.  Asegúrate de tener **Python** instalado en tu sistema.
+2.  Abre el archivo `main.py` en tu editor de código preferido.
 
-Funciones
+**Nota:** Si necesitas ayuda para configurar tu entorno, se incluye una guía para instalar y configurar **VS Code** (IDE) y **Python** (intérprete) [aquí](https://rodokizzzdev.com/archivos/Instalación%20y%20Config%20VSCyPython.pdf).
 
+---
 
-(Opcional) Programación orientada a objetos e interfaces gráficas
+###  Uso
 
+La interfaz de la calculadora es intuitiva. Simplemente haz clic en los botones para construir tu operación:
+1.  Haz clic en los **dígitos** (`0-9`) para escribir un número.
+2.  Haz clic en el **botón de punto** (`.`) para usar decimales.
+3.  Selecciona un **operador** (`+`, `-`, `*`, `/`, `%`, `sqrt`) para realizar una operación.
+4.  Usa el **botón "C"** para limpiar la pantalla.
+5.  Finalmente, presiona el **botón de igual (`=`)** para obtener el resultado.
 
+---
 
-¿Quieres que te redacte una versión corta y formal de esta descripción (por ejemplo, para un reporte escolar)?ChatGPT PlusEl documento que subiste (Texto.para.archivo.README.docx) contiene una descripción completa del proyecto “Calculadora Básica en Python”.
-Aquí te dejo un resumen claro y estructurado del contenido principal:
+###  Contribuciones
 
- Nombre del proyecto:
-Calculadora Básica en Python
+¡Las contribuciones son bienvenidas! Si deseas ayudar a mejorar este proyecto, por favor sigue los siguientes pasos:
 
- Descripción del proyecto:
-La aplicación muestra una interfaz que simula una calculadora básica con botones del 0 al 9, punto decimal, botón de limpiar y operaciones como suma, resta, multiplicación, división, porcentaje y raíz cuadrada.
+1.  **Haz un *fork*** del repositorio.
+2.  **Clona tu *fork*** a tu máquina local:
+    ```bash
+    git clone [https://github.com/rodokizzzdev/calculadoraPython.git](https://github.com/rodokizzzdev/calculadoraPython.git)
+    ```
+3.  **Crea una nueva rama** para tus cambios:
+    ```bash
+    git checkout -b nombre-de-tu-rama
+    ```
+4.  **Haz tus cambios y haz *commit***:
+    ```bash
+    git add .
+    git commit -m "Descripción clara de tus cambios"
+    ```
+5.  **Envía los cambios** a tu *fork* en GitHub:
+    ```bash
+    git push origin nombre-de-tu-rama
+    ```
+6.  **Abre un *pull request*** hacia la rama `main` del repositorio original, explicando tus cambios.
 
- Tecnologías usadas:
+Revisaré tu *pull request* tan pronto como sea posible. ¡Gracias por tu interés en mejorar este proyecto!
 
+---
 
-Python
+###  Licencia
 
-
-Tkinter (para la interfaz gráfica)
-
-
-Math (para funciones matemáticas como la raíz cuadrada)
-
-
-
- Características principales:
-
-
-Uso de tkinter con alias tk para facilitar su manejo.
-
-
-Uso de math.sqrt para calcular raíces cuadradas.
-
-
-Variable global expresion_actual que guarda la operación actual.
-
-
-Función clic_boton(simbolo) que gestiona los botones presionados.
-
-
-Uso de eval() para evaluar las expresiones matemáticas.
-
-
-Manejador de errores try...except que evita que el programa falle al ingresar operaciones inválidas (por ejemplo, dividir entre 0).
-
-
-
-🚀 Instalación:
-Opción A: Ejecutar el archivo Calculadora.exe dentro de la carpeta dist.
-Opción B: Abrir el archivo main.py en un editor de código (como VS Code) y asegurarse de tener instalado Python.
-Incluye guía de instalación de VS Code y Python:
-https://rodokizzzdev.com/archivos/Instalación y Config VSCyPython.pdf
-
- Uso:
-
-
-Seleccionar un número (0–9).
-
-
-Elegir una operación (+, −, ×, ÷, %, √).
-
-
-(Opcional) Usar el punto “.” para números decimales.
-
-
-Usar “C” para borrar.
-
-
-Presionar “=” para obtener el resultado.
-
-
-
- Contribuciones:
-Los usuarios pueden contribuir al proyecto mediante GitHub:
-
-
-Hacer un fork.
-
-
-Clonar el repositorio.
-
-
-Crear una nueva rama.
-
-
-Realizar y registrar los cambios.
-
-
-Enviar un pull request para revisión.
-
-
-Repositorio:
-git clone https://github.com/rodokizzzdev/calculadoraPython.git
-
-
-📜 Licencia:
-MIT – Permite usar, modificar y distribuir el código libremente, con reconocimiento al autor original.
+Este proyecto está bajo la Licencia **MIT**.
